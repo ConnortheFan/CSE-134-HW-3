@@ -8,59 +8,70 @@
     </head>
 
     <body>
-        <h1>Contact Me</h1>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./projects/index.html">Projects</a>
+            <a href="./labs/index.html">Labs</a>
+            <a href="./aboutme.html">About Me</a>
+            <a href="./contactme.html">Contact Me</a>
+            <a href="./tags.html">Tags</a>
+        </nav>
 
-        <p>If you want to reach out, I'm available at 
-            <br><span>email: connorthefan@gmail.com | cjfan@ucsd.edu 
-            <br>tel: 562-732-3817    
-            </span><br>
-        Or you can fill out this form.</p>
+        <main>
+            <h1>Contact Me</h1>
 
-        <aside>
-            <p>It doesn't have any functionality now, but maybe it will in the future.</p>
-        </aside>
+            <p>If you want to reach out, I'm available at 
+                <br><span>email: connorthefan@gmail.com | cjfan@ucsd.edu 
+                <br>tel: 562-732-3817    
+                </span><br>
+            Or you can fill out this form.</p>
 
-        <form>
-            <fieldset>
-                <legend>Contact Me:</legend>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br><br>
+            <aside>
+                <p>It doesn't have any functionality now, but maybe it will in the future.</p>
+            </aside>
 
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email"><br><br>
+            <form>
+                <fieldset>
+                    <legend>Contact Me:</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
 
-                <label for="tel">Tel:</label>
-                <input type="tel" id="tel" name="tel"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"><br><br>
 
-                <label for="where">Where are you?</label>
-                <input list="places" name="where" id="where"><br><br>
+                    <label for="tel">Tel:</label>
+                    <input type="tel" id="tel" name="tel"><br><br>
 
-                <datalist id="places">
-                    <option value="San Diego"></option>
-                    <option value="California"></option>
-                    <option value="USA"></option>
-                    <option value="China"></option>
-                </datalist>
+                    <label for="where">Where are you?</label>
+                    <input list="places" name="where" id="where"><br><br>
 
-                <label for="reason">Reason for contact:</label>
-                <select name="reason" id="reason">
-                    <optgroup label="Reason">
-                        <option value="personal">Personal</option>
-                        <option value="school">School</option>
-                        <option value="work">Work</option>
-                        <option value="other">Other</option>
-                    </optgroup>
-                </select><br><br>
+                    <datalist id="places">
+                        <option value="San Diego"></option>
+                        <option value="California"></option>
+                        <option value="USA"></option>
+                        <option value="China"></option>
+                    </datalist>
 
-                <label for="summary">Summary:</label>
-                <input type="text" id="summary" name="summary"><br><br>
+                    <label for="reason">Reason for contact:</label>
+                    <select name="reason" id="reason">
+                        <optgroup label="Reason">
+                            <option value="personal">Personal</option>
+                            <option value="school">School</option>
+                            <option value="work">Work</option>
+                            <option value="other">Other</option>
+                        </optgroup>
+                    </select><br><br>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="10"></textarea><br><br>
+                    <label for="summary">Summary:</label>
+                    <input type="text" id="summary" name="summary"><br><br>
 
-                <button type="submit">Submit</button>
-            </fieldset>
-        </form>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="10"></textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </main>
     </body>
 
 </html>
