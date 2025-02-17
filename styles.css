@@ -1,0 +1,28 @@
+.navbar {
+    background-color: hsl(169, 61%, 79%);
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar li:hover{
+    background-color: hsl(164, 60%, 57%);
+}
+#logo {
+    float: left;
+    display: inline;
+    font-weight: bolder;
+    font-size: larger;
+    clear: both;
+}
