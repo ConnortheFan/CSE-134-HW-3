@@ -16,6 +16,9 @@
     display: block;
     text-align: center;
 }
+.navbar li {
+    transition: all 0.5s ease-in;
+}
 .navbar li:hover{
     background-color: hsl(164, 60%, 57%);
 }
@@ -43,6 +46,10 @@
     position: absolute;
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: 
+        opacity 0.5s,
+        display 1s allow-discrete;
 }
 .dropdown-content a {
     float: none;
@@ -52,9 +59,7 @@
     display: block;
     text-align: left;
 }
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
 .dropdown:hover .dropdown-content {
+    opacity: 1;
     display: block;
 }
