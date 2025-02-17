@@ -1,5 +1,9 @@
 .navbar {
     background-color: hsl(169, 61%, 79%);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    --navbar-padding: 15px;
 }
 .navbar .navbar-main{
     list-style-type: none;
@@ -8,13 +12,18 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding-right: 1rem;
+    height: 100%;
 }
 .navbar a{
     color: black;
     text-decoration: none;
-    padding: 15px;
+    padding: var(--navbar-padding);
     display: block;
     text-align: center;
+}
+.navbar > ul {
+    height: 100%;
 }
 .navbar li {
     transition: all 0.5s ease-in;
@@ -26,7 +35,8 @@
     float: left;
     display: inline;
     font-weight: bolder;
-    font-size: larger;
+    padding: var(--navbar-padding);
+    margin: 0;
 }  
 .dropdown .dropbtn {
     font-size: 16px;  
@@ -47,9 +57,7 @@
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     opacity: 0;
-    transition: 
-        opacity 0.5s,
-        display 1s allow-discrete;
+    transition: all 0.5s allow-discrete;
 }
 .dropdown-content a {
     float: none;
@@ -62,4 +70,24 @@
 .dropdown:hover .dropdown-content {
     opacity: 1;
     display: block;
+}
+header {
+    padding-top: 2em;
+    font-size: 1.5em;
+}
+header h1 {
+    text-align: center;
+}
+header p {
+    text-align: center;
+    /* font-size: large; */
+}
+
+.flex-main {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    font-size: 1.5em;
 }
