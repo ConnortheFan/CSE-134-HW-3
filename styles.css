@@ -138,9 +138,3 @@ img {
         align-self: center;
     }
 } 
-
-@media (max-width: 380px) {
-    .flex-main {
-        display: block;
-    }
-}

@@ -79,8 +79,9 @@ hr {
     100% { transform: rotate(0deg) }
 }
 
-@media (max-width:380px) {
+@media (max-width:480px) {
     #section1, #section2, #section2-1 {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
